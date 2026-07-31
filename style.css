@@ -1,1 +1,15 @@
 /* Custom styles for ecomcircles.com — add your own rules below. */
+span.banner-trusted img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+span.banner-trusted img:last-child {
+    margin-left: -16px;
+    box-shadow: -2px 0px 4px #0000003b;
+}
+
+span.banner-trusted img:nth-child(2) {
+    margin-left: -24px;
+}
