@@ -1,4 +1,93 @@
 /* Custom styles for ecomcircles.com — add your own rules below. */
+
+/* ============================================================
+   Core theme: dark background + green accent, inspired by
+   trendoraecommerceautomation.com. Overrides only the site's
+   semantic design tokens (never the raw palette primitives that
+   decorative pastel cards reference directly), plus the specific
+   Tailwind utility classes used by the shared header/footer/
+   marketplaces chrome. Loads after the framework stylesheet so
+   these win the cascade.
+   ============================================================ */
+:root {
+  /* section/surface background (was #fff) */
+  --white: #0d0d0d;
+
+  /* brand accent (was indigo #6366f1) */
+  --color-primary: #00e676;
+  --color-primary-hover: #00cf68;
+  --color-primary-active: #00b85c;
+  --color-on-primary: #000000;
+  --text-link: #00e676;
+
+  /* body copy on the new dark background */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-tertiary: #8a8a8a;
+  --text-body: #d9d9d9;
+
+  /* card/section borders, readable on both dark and light surfaces */
+  --border-subtle: #404040;
+
+  /* shadows tuned for a dark UI instead of the original soft light-gray glow */
+  --shadow-soft: 0 12px 48px 0 rgba(0, 230, 118, 0.1);
+  --shadow-card: 0 2px 8px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Shared header/footer/marketplaces chrome uses Tailwind utility
+   classes that hardcode their color instead of referencing a
+   variable, so they need direct overrides. */
+.bg-white {
+  background-color: #0d0d0d;
+}
+.bg-neutral-50 {
+  background-color: #141414;
+}
+.bg-neutral-100 {
+  background-color: #1a1a1a;
+}
+.bg-neutral-400 {
+  background-color: #595959;
+}
+.border-neutral-200 {
+  border-color: #333333;
+}
+.border-neutral-400 {
+  border-color: #595959;
+}
+.text-neutral-400 {
+  color: #737373;
+}
+.text-neutral-500 {
+  color: #8a8a8a;
+}
+.text-neutral-600 {
+  color: #b3b3b3;
+}
+.text-neutral-800 {
+  color: #e0e0e0;
+}
+.text-neutral-900 {
+  color: #ffffff;
+}
+.text-neutral-950 {
+  color: #ffffff;
+}
+
+span.banner-trusted img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+span.banner-trusted img:last-child {
+    margin-left: -16px;
+    box-shadow: -2px 0px 4px #0000003b;
+}
+
+span.banner-trusted img:nth-child(2) {
+    margin-left: -24px;
+}
 span.banner-trusted img {
     width: 40px;
     height: 40px;
