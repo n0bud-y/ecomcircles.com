@@ -1,0 +1,15 @@
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve('.');
+const src = path.join(root, 'software', 'index.html');
+const text = fs.readFileSync(src, 'utf8');
+const marker = '<main class="flex-1">';
+const start = text.indexOf(marker);
+if (start === -1) throw new Error('main start marker not found');
+const end = text.lastIndexOf('</main>');
+if (end === -1) throw new Error('main end marker not found');
+const body = text.slice(start + marker.length, end);
+const out = path.join(root, 'software', 'index.php');
+const content = "<?php\ninclude '../include/header.php';\n?>\n" + body + "\n<?php\ninclude '../include/footer.php';\n?>\n";
+fs.writeFileSync(out, content, 'utf8');
+console.log('created', out);
