@@ -57,6 +57,7 @@
       href="_next/static/chunks/087dhsw_ljdag53b6.css?dpl=dpl_AAfjYFNTKKor3QnnhYRaN9JQwV9u"
       data-precedence="next"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="preload"
@@ -544,6 +545,7 @@
         <div class="ec-5">
           <div
             class="inline-flex flex-col items-center gap-2.5 rounded-3xl px-5 py-3 text-center sm:flex-row sm:gap-3 sm:rounded-full sm:py-2 sm:pl-4 sm:pr-2 sm:text-left ec-6"
+          class="ec-14" data-aos="fade-up" 
           >
             <span class="banner-trusted ec-7">
                 <img src="images/josh-f.webp" >
@@ -556,7 +558,7 @@
             >
           </div>
           <h1
-            class="ec-12"
+            class="ec-12" data-aos="fade-up" data-aos-delay="100"
           >
             The All-in-One<!-- -->
             <span
@@ -575,7 +577,7 @@
             >
           </h1>
           <p
-            class="ec-14"
+            class="ec-14" data-aos="fade-up" data-aos-delay="200"
           >
             Inventory, repricing, orders, fulfillment, and managed services for Amazon, Walmart, and Mirakl sellers.
             Everything you need to scale in one place.
@@ -693,7 +695,8 @@
               top: 30%;
               width: 300px;
               text-align: left;
-            "
+            " 
+            data-aos="fade-up" data-aos-delay="100"
           >
             <div
               style="
@@ -893,6 +896,7 @@
               width: 300px;
               text-align: left;
             "
+            data-aos="fade-up"
           >
             <div style="animation: ecFadeIn 350ms var(--ease-std)">
               <div
@@ -915,7 +919,7 @@
           </div>
         </div>
       </section>
-      <section style="background: linear-gradient(180deg, #faf9fe 0%, #f6f5fb 100%); padding: 72px 24px 88px">
+      <section id="trust-stats" data-counter-section style="background: linear-gradient(420deg, #1a1a1a 0%, #000000e6 100%); padding: 72px 24px 88px">
         <div class="ec-16">
           <div
             class="gradient-text ec-17"
@@ -933,6 +937,12 @@
             <div>
               <div
                 class="ec-19"
+                data-counter
+                data-count-to="1.7"
+                data-count-precision="1"
+                data-count-prefix="$"
+                data-count-unit="B"
+                data-count-suffix="+"
               >
                 $1.7B+
               </div>
@@ -945,6 +955,10 @@
             <div>
               <div
                 class="ec-19"
+                data-counter
+                data-count-to="7174"
+                data-count-precision="0"
+                data-count-suffix="+"
               >
                 7,174+
               </div>
@@ -957,6 +971,11 @@
             <div>
               <div
                 class="ec-19"
+                data-counter
+                data-count-to="1.29"
+                data-count-precision="2"
+                data-count-unit="M"
+                data-count-suffix="+"
               >
                 1.29M+
               </div>
@@ -969,6 +988,11 @@
             <div>
               <div
                 class="ec-19"
+                data-counter
+                data-count-to="5.15"
+                data-count-precision="2"
+                data-count-unit="M"
+                data-count-suffix="+"
               >
                 5.15M+
               </div>
@@ -983,36 +1007,43 @@
       </section>
       <section style="background: var(--white); padding: 88px 0 96px">
         <div style="max-width: 1100px; margin: 0 auto; padding: 0 24px">
-          <div class="ec-24">
+          <div class="ec-24" style="overflow: hidden;">
             <h2
               class="ec-25"
+              data-aos="fade-up"
             >
-              All-in-One Ecommerce Management<br /><span class="gradient-text">Software and Services</span>
+              All-in-One Ecommerce Management<br /><span class="" style="background: linear-gradient(90deg, #09e179, #00d46e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Software and Services</span>
             </h2>
             <p
               class="ec-26"
+               data-aos="fade-up" data-aos-delay="100"
             >
               One platform unlocks every tool and service you need to source, list, price, fulfill, and scale across
               Amazon, Walmart, and Mirakl.
             </p>
           </div>
         </div>
-        <div class="no-scrollbar" style="display: flex; gap: 22px; overflow-x: auto; padding: 44px 24px 8px">
+        <div class="no-scrollbar" style="display: flex; gap: 22px; overflow-x: auto; padding: 44px 24px 20px">
           <a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group Modren_Card"
             style="
+             
               position: relative;
               overflow: hidden;
               flex: none;
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #aeb8f5;
+              background: #ffffff0d;
               border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
+            
             "
             href="services/buy-amazon-seller-account/index.html"
             ><h3
@@ -1021,7 +1052,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1032,7 +1063,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color:#fff;
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1044,20 +1075,23 @@
                 style="position: absolute; inset: 0; border-radius: 50%; border: 26px solid rgba(255, 255, 255, 0.28)"
               ></div></div></a
           ><a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group  Modren_Card"
             style="
-              position: relative;
+             position: relative;
               overflow: hidden;
               flex: none;
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #cdb4f6;
+              background: #ffffff0d;
               border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
             "
             href="services/buy-walmart-account/index.html"
             ><h3
@@ -1066,7 +1100,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1077,7 +1111,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color: #fff;
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1089,7 +1123,7 @@
                 style="position: absolute; inset: 0; border-radius: 50%; border: 26px solid rgba(255, 255, 255, 0.3)"
               ></div></div></a
           ><a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group  Modren_Card"
             style="
               position: relative;
               overflow: hidden;
@@ -1097,12 +1131,15 @@
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #f4a3ad;
+              background: #ffffff0d;
               border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
             "
             href="services/amazon-management/index.html"
             ><h3
@@ -1111,7 +1148,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1122,7 +1159,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color:#fff;
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1134,7 +1171,7 @@
                 style="position: absolute; inset: 0; border-radius: 50%; border: 26px solid rgba(255, 255, 255, 0.3)"
               ></div></div></a
           ><a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group  Modren_Card"
             style="
               position: relative;
               overflow: hidden;
@@ -1142,12 +1179,15 @@
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #fbfbfd;
-              border: 1.5px solid var(--indigo-200);
+              background: #ffffff0d;
+              border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
             "
             href="services/walmart-management/index.html"
             ><h3
@@ -1156,7 +1196,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1167,7 +1207,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color:#fff;
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1179,7 +1219,7 @@
                 style="position: absolute; inset: 0; border-radius: 50%; border: 26px solid rgba(140, 120, 220, 0.1)"
               ></div></div></a
           ><a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group  Modren_Card"
             style="
               position: relative;
               overflow: hidden;
@@ -1187,12 +1227,15 @@
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #84e3a6;
+              background: #ffffff0d;
               border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
             "
             href="services/warehouse/index.html"
             ><h3
@@ -1201,7 +1244,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1212,7 +1255,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color: #fff; 
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1224,7 +1267,7 @@
                 style="position: absolute; inset: 0; border-radius: 50%; border: 26px solid rgba(255, 255, 255, 0.3)"
               ></div></div></a
           ><a
-            class="group transition-transform duration-200 hover:-translate-y-1"
+            class="group Modren_Card"
             style="
               position: relative;
               overflow: hidden;
@@ -1232,12 +1275,15 @@
               width: 300px;
               height: 320px;
               border-radius: var(--radius-xl);
-              background: #5ad7c6;
+              background: #ffffff0d;
               border: none;
               padding: 28px;
               box-sizing: border-box;
               text-decoration: none;
               box-shadow: var(--shadow-card);
+              border: 1px solid #ffffff1a;
+              backdrop-filter: blur(12px);
+              transition: box-shadow .3s ease,border-color .3s ease,transform .3s ease;
             "
             href="services/amazon-suspension-reinstatement/index.html"
             ><h3
@@ -1246,7 +1292,7 @@
                 font-weight: 700;
                 font-size: 26px;
                 line-height: 1.15;
-                color: var(--neutral-900);
+                color:#fff;
                 max-width: 220px;
                 margin: 0;
               "
@@ -1257,7 +1303,7 @@
               style="
                 font-family: var(--font-body);
                 font-size: 14.5px;
-                color: rgba(20, 20, 20, 0.7);
+                color: #fff;
                 margin-top: 10px;
                 max-width: 220px;
               "
@@ -1340,9 +1386,9 @@
       <div id="marketplaces" class="ec-21">
         <section id="marketplaces" class="py-16 md:py-20 px-6 bg-neutral-50">
           <div class="max-w-5xl mx-auto text-center">
-            <div style="opacity: 1; transform: translateY(24px)">
-              <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3">Sell Everywhere</h2>
-              <p class="text-base text-neutral-500 max-w-xl mx-auto mb-10">One platform. Every marketplace.</p>
+            <div style="opacity: 1;transform: translateY(24px); overflow: hidden; margin-bottom:20px;">
+              <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 mb-3" data-aos="fade-up">Sell Everywhere</h2>
+              <p class="text-base text-neutral-500 max-w-xl mx-auto " data-aos="fade-up" data-aos-delay="100"  >One platform. Every marketplace.</p>
             </div>
             <div
               class="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-10"
@@ -1351,7 +1397,7 @@
               <div class="flex flex-col items-center gap-2">
                 <div class="h-10 md:h-12 flex items-center">
                   <img
-                    src="images/marketplaces/amazon.webp"
+                    src="images/amazon.png"
                     alt="Amazon logo"
                     class="h-8 md:h-10 w-auto object-contain"
                   />
@@ -1381,7 +1427,7 @@
               <div class="flex flex-col items-center gap-2">
                 <div class="h-10 md:h-12 flex items-center">
                   <img
-                    src="images/marketplaces/shopify.webp"
+                    src="images/shopify.png"
                     alt="Shopify logo"
                     class="h-8 md:h-10 w-auto object-contain"
                   />
@@ -1391,7 +1437,7 @@
               <div class="flex flex-col items-center gap-2">
                 <div class="h-10 md:h-12 flex items-center">
                   <img
-                    src="images/marketplaces/bigcommerce.svg"
+                    src="images/bigcommerce.png"
                     alt="BigCommerce logo"
                     class="h-8 md:h-10 w-auto object-contain"
                   />
@@ -1428,7 +1474,8 @@
                   <img
                     src="images/marketplaces/tiktok.webp"
                     alt="TikTok logo"
-                    class="h-8 md:h-10 w-auto object-contain grayscale opacity-50"
+                    class="h-8 md:h-10 w-auto object-contain  opacity-50"
+                    style="filter: grayscale(0) brightness(0.5) contrast(0.5);"
                   />
                 </div>
                 <span class="text-xs font-medium text-neutral-400">TikTok<!-- -->· Coming Soon</span>
@@ -1442,24 +1489,28 @@
           <div class="ec-24">
             <h2
               class="ec-25"
+              data-aos="fade-up"
             >
-              The Complete Seller <span class="gradient-text">Toolkit</span>
+              The Complete Seller <span class="" style="background: linear-gradient(90deg, #09e179, #00d46e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Toolkit</span>
             </h2>
             <p
               class="ec-26"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
             >
               Six core tools — from sourcing to fulfillment — working together so you run your whole operation in one
               place.
             </p>
           </div>
-          <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up" data-aos-delay="200">
             <a
               class="group flex flex-col transition-transform duration-200 hover:-translate-y-1 ec-27"
               href="software/sourcing/amazon-fba-leads/index.html"
               ><div
                 class="ec-28"
               >
-                <div class="ec-29">
+                <di v class="ec-29">
                   <div
                     style="
                       background: #fff;
@@ -1512,7 +1563,7 @@
                       >+38% ROI</span
                     >
                   </div>
-                </div>
+                </di>
               </div>
               <div
                 style="
@@ -2107,11 +2158,14 @@
           <div class="ec-24">
             <h2
               class="ec-25"
+              data-aos="fade-up"
             >
               Why Multi-Channel?
             </h2>
             <p
               class="ec-26"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               Sell on Amazon, Walmart, and Mirakl from one platform. Distribute risk and grow faster with unified tools.
             </p>
@@ -2960,21 +3014,26 @@
         </div>
       </section>
       <section class="ec-22">
-        <div class="ec-23">
-          <div class="ec-24">
+        <div class="ec-23" >
+          <div class="ec-24" style="overflow:hidden;" >
             <h2
               class="ec-25"
+              data-aos="fade-up"
             >
-              Loved by eCommerce Sellers <span class="gradient-text">Worldwide</span>
+              Loved by eCommerce Sellers <span class="" style="background: linear-gradient(90deg, #09e179, #00d46e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"
+              
+              >Worldwide</span>
             </h2>
             <p
               class="ec-26"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               See how brand owners are growing faster, increasing profits, and scaling with confidence using our
               platform.
             </p>
           </div>
-          <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3 " data-aos="fade-up">
             <div
               class="ec-61"
             >
@@ -3162,16 +3221,20 @@
           <div class="ec-24">
             <h2
               class="ec-25"
+              data-aos="fade-up"
             >
-              Need <span class="gradient-text">Help?</span>
+              Need <span class="" style="background: linear-gradient(90deg, #09e179, #00d46e); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Help?</span>
             </h2>
             <p
               class="ec-69"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               We&#x27;re here whenever you need a hand — pick the fastest way to get unstuck.
             </p>
           </div>
-          <div class="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-3"
+          data-aos="fade-up">
             <a
               class="group transition-transform duration-200 hover:-translate-y-1 ec-70"
               href="services/get-approved-on-walmart/index.html"
@@ -3388,6 +3451,7 @@
       <section class="ec-80">
         <div
           style="
+           
             max-width: 1440px;
             margin: 0 auto;
             border-radius: 32px;
@@ -3395,7 +3459,9 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(120deg, #7c3aed 0%, #a21caf 55%, #ec4899 100%);
+            background: linear-gradient(
+208deg, #09e179, #00d46e, #006635);
+          
           "
         >
           <div class="ec-82">
@@ -3841,7 +3907,7 @@
               width="680"
               height="124"
               style="color: transparent; height: 50px; width: auto"
-              src="images/logo-ecomcircles-gray.webp"
+              src="images/eee8d5f593c8f38d2df8231780cc7d3b.webp"
           /></a>
           <p class="text-sm text-neutral-500" style="font-family: var(--font-body)">
             © Copyright 2026 | Ecom Circles. All rights reserved. |<!-- -->
@@ -4085,6 +4151,19 @@
     </script>
     <script>
       self.__next_f.push([1, "3f:null\n"]);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.AOS) {
+          AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            mirror: false,
+          });
+        }
+      });
     </script>
     <script src="script.js" defer></script>
   </body>

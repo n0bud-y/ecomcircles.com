@@ -225,6 +225,8 @@ span.banner-trusted img:nth-child(2) {
   font-weight: 700;
   font-size: 22px;
   display: inline-block;
+  background: #00d46e;
+  background-clip: text;
 }
 
 .ec-18 {
@@ -241,7 +243,9 @@ span.banner-trusted img:nth-child(2) {
   font-weight: 900;
   font-size: clamp(34px, 5vw, 46px);
   letter-spacing: -0.03em;
-  color: var(--neutral-950);
+  color: transparent;
+  background: linear-gradient(178deg, #008846, #a7e4a7);
+  background-clip: text;
 }
 
 .ec-20 {
@@ -275,8 +279,11 @@ span.banner-trusted img:nth-child(2) {
   font-size: clamp(32px, 5vw, 48px);
   line-height: 1.1;
   letter-spacing: -0.03em;
-  color: var(--neutral-950);
+  color: #ffffff;
   margin: 0;
+  /* background: linear-gradient(90deg, #09e179, #00d46e); */
+  /* background-clip: text; */
+  /* color: transparent; */
 }
 
 .ec-26 {
@@ -558,7 +565,7 @@ span.banner-trusted img:nth-child(2) {
   font-family: var(--font-body);
   font-size: 15.5px;
   line-height: 1.6;
-  color: var(--text-body);
+  color: #333;
   margin: 0;
   flex: 1;
 }
@@ -582,7 +589,7 @@ span.banner-trusted img:nth-child(2) {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 15.5px;
-  color: var(--text-primary);
+  color: #444;
 }
 
 .ec-67 {
@@ -756,7 +763,7 @@ span.banner-trusted img:nth-child(2) {
   gap: 10px;
   border: none;
   background: #fff;
-  color: var(--indigo-700);
+  color: #444;
   border-radius: 12px;
   padding: 15px 26px;
   font-family: var(--font-body);
@@ -1019,7 +1026,7 @@ span.banner-trusted img:nth-child(2) {
   font-family: var(--font-body);
   font-size: 14.5px;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #333;
   white-space: nowrap;
 }
 
@@ -1125,7 +1132,7 @@ span.banner-trusted img:nth-child(2) {
 .ec-133 {
   flex: none;
   width: 110px;
-  background: var(--color-primary);
+  background: #816d6d;
   align-items: center;
   justify-content: center;
 }
@@ -1136,4 +1143,8 @@ span.banner-trusted img:nth-child(2) {
   background: linear-gradient(135deg, #6366F1 0%, #ec4899 100%);
   align-items: center;
   justify-content: center;
+}
+  .Modren_Card:hover {
+    box-shadow: 0 0 30px rgb(0 230 96 / 0.5), 0 0 60px rgb(0 230 96 / 0.2) !important;
+    border-color: #00e66080 !important;
 }
