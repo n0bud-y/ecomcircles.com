@@ -49,25 +49,25 @@
     return (
       '<div class="ec-mega__grid">' +
       '<section><h3 class="ec-mega__heading">Sourcing &amp; Research</h3><ul class="ec-mega__list">' +
-      item(p + "sourcing.html", "search", "Sourcing &amp; Scanner", "Scan wholesale lists, find profitable products") +
-      item(p + "wholesale.html", "search", "Wholesale Scanner", "Dedicated wholesale product discovery") +
-      item(p + "amazon-fba-leads.html", "zap", "FBA Leads", "AI-powered product lead discovery") +
+      item(p + "sourcing.php", "search", "Sourcing &amp; Scanner", "Scan wholesale lists, find profitable products") +
+      item(p + "wholesale.php", "search", "Wholesale Scanner", "Dedicated wholesale product discovery") +
+      item(p + "amazon-fba-leads.php", "zap", "FBA Leads", "AI-powered product lead discovery") +
       "</ul></section>" +
       '<section><h3 class="ec-mega__heading">Repricing</h3><ul class="ec-mega__list">' +
-      item(p + "repricer.html", "dollar", "Repricer", "Automated repricing for Amazon &amp; Walmart") +
-      item(p + "amazon.html", "dollar", "Amazon Repricer", "Intelligent repricing for Amazon") +
-      item(p + "walmart.html", "dollar", "Walmart Repricer", "Intelligent repricing for Walmart") +
+      item(p + "repricer.php", "dollar", "Repricer", "Automated repricing for Amazon &amp; Walmart") +
+      item(p + "amazon.php", "dollar", "Amazon Repricer", "Intelligent repricing for Amazon") +
+      item(p + "walmart.php", "dollar", "Walmart Repricer", "Intelligent repricing for Walmart") +
       "</ul></section>" +
       '<section><h3 class="ec-mega__heading">Operations</h3><ul class="ec-mega__list">' +
-      item(p + "inventory-management.html", "box", "Inventory Management", "Stock levels, COGS, bulk editing") +
-      item(p + "order-management.html", "clipboard", "Order Management", "Unified orders, fulfillment, buy shipping") +
+      item(p + "inventory-management.php", "box", "Inventory Management", "Stock levels, COGS, bulk editing") +
+      item(p + "order-management.php", "clipboard", "Order Management", "Unified orders, fulfillment, buy shipping") +
       "</ul></section>" +
       '<section><h3 class="ec-mega__heading">Extension &amp; Tools</h3><ul class="ec-mega__list">' +
-      item(p + "extension.html", "tag", "Chrome Extension", "7+ free tools for Amazon &amp; Walmart") +
-      item(p + "wfs-calculator.html", "calc", "WFS Calculator", "Estimate Walmart fulfillment fees") +
+      item(p + "extension.php", "tag", "Chrome Extension", "7+ free tools for Amazon &amp; Walmart") +
+      item(p + "wfs-calculator.php", "calc", "WFS Calculator", "Estimate Walmart fulfillment fees") +
       "</ul></section>" +
       "</div>" +
-      '<div class="ec-mega__footer"><a class="ec-mega__all" href="' + p + 'software.html">View All Software' +
+      '<div class="ec-mega__footer"><a class="ec-mega__all" href="' + p + 'software.php">View All Software' +
       '<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
       "</a></div>"
     );
@@ -77,16 +77,16 @@
     return (
       '<div class="ec-mega__grid">' +
       '<section><ul class="ec-mega__list">' +
-      item(p + "amazon-management.html", "users", "Amazon Management", "DFY store management with profit share") +
-      item(p + "walmart-management.html", "users", "Walmart Management", "DFY Walmart store operations") +
-      item(p + "buy-amazon-seller-account.html", "store", "Buy Amazon Account", "Aged, U.S.-based seller accounts") +
-      item(p + "sell-amazon-seller-account.html", "store", "Sell Amazon Account", "Sell your Amazon business") +
-      item(p + "buy-walmart-account.html", "store", "Buy Walmart Account", "Pre-approved Walmart stores") +
-      item(p + "get-approved-on-walmart.html", "filecheck", "Get Approved on Walmart", "DFY approval service") +
-      item(p + "warehouse.html", "warehouse", "Warehouse &amp; Fulfillment", "FBA prep, WFS prep, 2-step dropshipping") +
-      item(p + "fba-prep.html", "box", "FBA Prep", "$1/unit prep, Chicago &amp; Atlanta") +
-      item(p + "wfs-prep.html", "box", "WFS Prep", "$1/unit Walmart prep") +
-      item(p + "perp-center.html", "building", "Prep Center Directory", "287 verified prep centers, compared") +
+      item(p + "amazon-management.php", "users", "Amazon Management", "DFY store management with profit share") +
+      item(p + "walmart-management.php", "users", "Walmart Management", "DFY Walmart store operations") +
+      item(p + "buy-amazon-seller-account.php", "store", "Buy Amazon Account", "Aged, U.S.-based seller accounts") +
+      item(p + "sell-amazon-seller-account.php", "store", "Sell Amazon Account", "Sell your Amazon business") +
+      item(p + "buy-walmart-account.php", "store", "Buy Walmart Account", "Pre-approved Walmart stores") +
+      item(p + "get-approved-on-walmart.php", "filecheck", "Get Approved on Walmart", "DFY approval service") +
+      item(p + "warehouse.php", "warehouse", "Warehouse &amp; Fulfillment", "FBA prep, WFS prep, 2-step dropshipping") +
+      item(p + "fba-prep.php", "box", "FBA Prep", "$1/unit prep, Chicago &amp; Atlanta") +
+      item(p + "wfs-prep.php", "box", "WFS Prep", "$1/unit Walmart prep") +
+      item(p + "perp-center.php", "building", "Prep Center Directory", "287 verified prep centers, compared") +
       "</ul></section>" +
       "</div>"
     );
@@ -96,17 +96,16 @@
     return (
       '<div class="ec-mega__grid">' +
       '<section><ul class="ec-mega__list">' +
-      item(p + "compare.html", "chart", "Compare Hub", "See all comparisons") +
-      item(p + "scanunlimited.html", "chart", "vs ScanUnlimited", "Feature comparison") +
-      item(p + "flipmine.html", "chart", "vs Flipmine", "Feature comparison") +
-      item(p + "sellify.html", "chart", "vs Sellify", "Feature comparison") +
-      item(p + "bizmetrica.html", "chart", "vs Bizmetrica (WAMP)", "Feature comparison") +
-      item(p + "sourcedart.html", "chart", "vs SourceDart", "Feature comparison") +
-      item(p + "getmarter.html", "chart", "vs Marter", "Feature comparison") +
-      item(p + "pricelink .html", "chart", "vs PriceLink", "Feature comparison") +
+      item(p + "compare.php", "chart", "Compare Hub", "See all comparisons") +
+      item(p + "scanunlimited.php", "chart", "vs ScanUnlimited", "Feature comparison") +
+      item(p + "flipmine.php", "chart", "vs Flipmine", "Feature comparison") +
+      item(p + "sellify.php", "chart", "vs Sellify", "Feature comparison") +
+      item(p + "bizmetrica.php", "chart", "vs Bizmetrica (WAMP)", "Feature comparison") +
+      item(p + "sourcedart.php", "chart", "vs SourceDart", "Feature comparison") +
+      item(p + "getmarter.php", "chart", "vs Marter", "Feature comparison") +
       "</ul></section>" +
       "</div>" +
-      '<div class="ec-mega__footer"><a class="ec-mega__all" href="' + p + 'compare.html">View All Comparisons' +
+      '<div class="ec-mega__footer"><a class="ec-mega__all" href="' + p + 'compare.php">View All Comparisons' +
       '<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
       "</a></div>"
     );

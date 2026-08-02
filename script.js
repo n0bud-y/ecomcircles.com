@@ -1,5 +1,30 @@
 /* Custom scripts for ecomcircles.com — add your own additions below. */
 
+/* Preloader: hide once the page (including images) has fully loaded, with
+   a safety timeout so a slow/stalled resource can never trap a visitor
+   behind the overlay indefinitely. Runs standalone (not inside the
+   DOMContentLoaded block below) since it only needs the element itself,
+   which is the first thing in <body> and present as soon as this
+   deferred script runs. */
+(function () {
+  var preloader = document.getElementById('ec-preloader');
+  if (!preloader) return;
+
+  var hidden = false;
+  function hide() {
+    if (hidden) return;
+    hidden = true;
+    preloader.classList.add('ec-preloader--hide');
+  }
+
+  if (document.readyState === 'complete') {
+    hide();
+  } else {
+    window.addEventListener('load', hide);
+  }
+  window.setTimeout(hide, 4000);
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   var tracks = document.querySelectorAll('.no-scrollbar');
 
@@ -121,4 +146,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     observer.observe(counterSection);
   }
+
+  // Cursor pointer
+
+function mousemoveHandler(e) {
+  try {
+    const target = e.target;
+
+    let tl = gsap.timeline({
+      defaults: {
+        x: e.clientX,
+        y: e.clientY,
+      }
+    })
+    let t2 = gsap.timeline({
+      defaults: {
+        x: e.clientX,
+        y: e.clientY,
+      }
+    })
+
+
+    // Main Cursor Moving 
+
+    tl.to(".cursor1", {
+      ease: "power2.out"
+    })
+      .to(".cursor2", {
+        ease: "power2.out"
+      }, "-=0.4")
+
+  } catch (error) {
+    console.log(error)
+  }
+
+}
 });

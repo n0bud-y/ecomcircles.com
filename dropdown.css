@@ -249,11 +249,11 @@
    Software Tools / Services / Compare nav items so both menus never
    show at once */
 header nav div.relative[data-ec-mega] > :not(a),
-header nav div.relative:has(> a[href$="software.html"]) > :not(a),
+header nav div.relative:has(> a[href$="software.php"]) > :not(a),
 header nav div.relative:has(> a[href="/software/"]) > :not(a),
-header nav div.relative:has(> a[href$="services.html"]) > :not(a),
+header nav div.relative:has(> a[href$="services.php"]) > :not(a),
 header nav div.relative:has(> a[href="/services/"]) > :not(a),
-header nav div.relative:has(> a[href$="compare.html"]) > :not(a),
+header nav div.relative:has(> a[href$="compare.php"]) > :not(a),
 header nav div.relative:has(> a[href="/compare/"]) > :not(a) {
   display: none !important;
 }
