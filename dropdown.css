@@ -1,0 +1,265 @@
+/* ============================================================
+   Software Tools mega dropdown — dark theme, opens on hover
+   Usage: <link rel="stylesheet" href="dropdown.css">
+   Markup structure: see dropdown.html
+   ============================================================ */
+
+.ec-nav,
+.ec-mega {
+  --ec-bg: #101114;
+  --ec-panel: #17181d;
+  --ec-panel-border: #26272e;
+  --ec-item-hover: #1f2026;
+  --ec-chip: #23242b;
+  --ec-chip-border: #2e3038;
+  --ec-text: #f2f3f5;
+  --ec-text-dim: #9a9ca6;
+  --ec-heading: #6f7280;
+  --ec-accent: #5b8cff;
+  font-family: "Satoshi", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.ec-nav {
+  background: var(--ec-bg);
+  border-bottom: 1px solid var(--ec-panel-border);
+  position: relative;
+  z-index: 100;
+}
+
+.ec-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  height: 64px;
+}
+
+.ec-nav__logo {
+  color: var(--ec-text);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.ec-nav__logo span { color: var(--ec-text-dim); font-weight: 500; }
+
+/* ---- top-level item that owns the dropdown ---- */
+.ec-nav__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ec-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ec-text);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 2px;
+}
+
+.ec-nav__caret {
+  width: 14px;
+  height: 14px;
+  stroke: var(--ec-text-dim);
+  transition: transform 0.2s ease;
+}
+
+.ec-nav__item:hover .ec-nav__caret { transform: rotate(180deg); }
+
+/* ---- dropdown panel: hidden until hover ---- */
+.ec-mega {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  width: min(920px, calc(100vw - 32px));
+  background: var(--ec-panel);
+  border: 1px solid var(--ec-panel-border);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0, 0, 0, 0.4);
+  padding: 28px 32px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+}
+
+/* invisible hover bridge so the pointer can travel nav -> panel */
+.ec-mega::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 14px;
+}
+
+.ec-nav__item:hover .ec-mega,
+.ec-nav__item:focus-within .ec-mega {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ---- two-column grid of sections ---- */
+.ec-mega__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px;
+  row-gap: 28px;
+}
+
+.ec-mega__heading {
+  color: var(--ec-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin: 0 0 10px 12px;
+}
+
+.ec-mega__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- individual item ---- */
+.ec-mega__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.ec-mega__item:hover { background: var(--ec-item-hover); }
+
+.ec-mega__chip {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--ec-chip);
+  border: 1px solid var(--ec-chip-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ec-mega__chip svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--ec-text);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ec-mega__title {
+  color: var(--ec-text);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 2px 0 3px;
+}
+
+.ec-mega__desc {
+  color: var(--ec-text-dim);
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ---- footer link ---- */
+.ec-mega__footer {
+  border-top: 1px solid var(--ec-panel-border);
+  margin-top: 24px;
+  padding: 14px 12px 8px;
+}
+
+.ec-mega__all {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ec-accent);
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ec-mega__all svg {
+  width: 15px;
+  height: 15px;
+  stroke: var(--ec-accent);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.15s ease;
+}
+
+.ec-mega__all:hover svg { transform: translateX(3px); }
+
+/* ---- single-column list variant (Services menu) ---- */
+.ec-mega--list {
+  width: min(440px, calc(100vw - 32px));
+  padding: 16px 12px;
+}
+
+.ec-mega--list .ec-mega__grid {
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+}
+
+.ec-mega--list .ec-mega__footer {
+  margin-top: 14px;
+  padding: 12px 12px 6px;
+}
+
+/* ============================================================
+   Floating variant — injected into <body> by dropdown.js and
+   anchored to the site header's "Software Tools" nav item.
+   ============================================================ */
+.ec-mega--floating {
+  position: fixed;
+  z-index: 9999;
+  transform: translateY(8px);
+}
+
+.ec-mega--floating.ec-mega--open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* hide the original React-rendered (light) dropdown panels of the
+   Software Tools / Services / Compare nav items so both menus never
+   show at once */
+header nav div.relative[data-ec-mega] > :not(a),
+header nav div.relative:has(> a[href$="software.html"]) > :not(a),
+header nav div.relative:has(> a[href="/software/"]) > :not(a),
+header nav div.relative:has(> a[href$="services.html"]) > :not(a),
+header nav div.relative:has(> a[href="/services/"]) > :not(a),
+header nav div.relative:has(> a[href$="compare.html"]) > :not(a),
+header nav div.relative:has(> a[href="/compare/"]) > :not(a) {
+  display: none !important;
+}
+
+/* ---- small screens: single column, panel hugs viewport ---- */
+@media (max-width: 720px) {
+  .ec-mega__grid { grid-template-columns: 1fr; }
+  .ec-mega { padding: 20px 16px 10px; }
+}

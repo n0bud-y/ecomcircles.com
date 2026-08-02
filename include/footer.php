@@ -56,7 +56,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/amazon-management/index.html"
+                  href="amazon-management.html"
                   >Amazon Automation (DFY)</a
                 >
               </li>
@@ -65,7 +65,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/buy-amazon-seller-account/index.html"
+                  href="buy-amazon-seller-account.html"
                   >Buy Aged Amazon Store</a
                 >
               </li>
@@ -74,7 +74,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/sell-amazon-seller-account/index.html"
+                  href="sell-amazon-seller-account.html"
                   >Sell Your Amazon Store</a
                 >
               </li>
@@ -83,7 +83,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/amazon-suspension-reinstatement/index.html"
+                  href="amazon-suspension-reinstatement.html"
                   >Amazon Account Reinstatement</a
                 >
               </li>
@@ -99,7 +99,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/walmart-management/index.html"
+                  href="walmart-management.html"
                   >Walmart Automation (DFY)</a
                 >
               </li>
@@ -108,7 +108,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/buy-walmart-account/index.html"
+                  href="buy-walmart-account.html"
                   >Buy Walmart Storefront</a
                 >
               </li>
@@ -117,7 +117,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/get-approved-on-walmart/index.html"
+                  href="get-approved-on-walmart.html"
                   >Sell on Walmart</a
                 >
               </li>
@@ -126,7 +126,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/amazon-suspension-reinstatement/index.html"
+                  href="amazon-suspension-reinstatement.html"
                   >Walmart Account Reinstatement</a
                 >
               </li>
@@ -142,7 +142,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/warehouse/fba-prep/index.html"
+                  href="fba-prep.html"
                   >FBA Prep</a
                 >
               </li>
@@ -151,7 +151,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/warehouse/wfs-prep/index.html"
+                  href="wfs-prep.html"
                   >WFS Prep</a
                 >
               </li>
@@ -160,7 +160,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="prep-centers/index.html"
+                  href="perp-center.html"
                   >Prep Center Directory</a
                 >
               </li>
@@ -169,7 +169,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/warehouse/returns-management/index.html"
+                  href="returns-management.html"
                   >Returns</a
                 >
               </li>
@@ -178,7 +178,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="services/warehouse/index.html"
+                  href="warehouse.html"
                   >3PL Services</a
                 >
               </li>
@@ -194,7 +194,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="compare/index.html"
+                  href="compare.html"
                   >DS Amazon Quick View</a
                 >
               </li>
@@ -203,7 +203,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="compare/index.html"
+                  href="compare.html"
                   >Inventory Lab</a
                 >
               </li>
@@ -212,7 +212,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="compare/scanunlimited/index.html"
+                  href="scanunlimited.html"
                   >Scan Unlimited</a
                 >
               </li>
@@ -228,7 +228,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/wfs-calculator/index.html"
+                  href="wfs-calculator.html"
                   >WFS Calculator</a
                 >
               </li>
@@ -237,7 +237,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/extension/index.html"
+                  href="extension.html"
                   >EC Seller Tools</a
                 >
               </li>
@@ -246,7 +246,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/extension/index.html"
+                  href="extension.html"
                   >Walmart Price History</a
                 >
               </li>
@@ -255,7 +255,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/sourcing/amazon-fba-leads/index.html"
+                  href="amazon-fba-leads.html"
                   >FBA Lead Lists</a
                 >
               </li>
@@ -264,7 +264,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/repricer/index.html"
+                  href="repricer.html"
                   >Repricer</a
                 >
               </li>
@@ -273,7 +273,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/inventory-management/index.html"
+                  href="inventory-management.html"
                   >Inventory Management</a
                 >
               </li>
@@ -282,7 +282,7 @@
                 ><a
                   class="text-[15px] text-neutral-600 transition-colors hover:text-neutral-900"
                   style="font-family: var(--font-body)"
-                  href="software/order-management/index.html"
+                  href="order-management.html"
                   >Order Management</a
                 >
               </li>
@@ -346,13 +346,13 @@
           /></a>
           <p class="text-sm text-neutral-500" style="font-family: var(--font-body)">
             © Copyright 2026 | Ecom Circles. All rights reserved. |<!-- -->
-            <a class="text-neutral-600 hover:text-neutral-900" href="privacy/index.html">Privacy Policy</a> |<!-- -->
-            <a class="text-neutral-600 hover:text-neutral-900" href="tos/index.html">Terms</a> |<!-- -->
+            <a class="text-neutral-600 hover:text-neutral-900" href="privacy.html">Privacy Policy</a> |<!-- -->
+            <a class="text-neutral-600 hover:text-neutral-900" href="tos.html">Terms</a> |<!-- -->
             <a class="text-neutral-600 hover:text-neutral-900" href="affiliate-disclosure/index.html"
               >Affiliate Disclosure</a
             >
             |<!-- -->
-            <a class="text-neutral-600 hover:text-neutral-900" href="disclaimer/index.html">Disclaimer</a>
+            <a class="text-neutral-600 hover:text-neutral-900" href="disclaimer.html">Disclaimer</a>
           </p>
         </div>
       </div>
