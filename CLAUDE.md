@@ -24,15 +24,32 @@ file server or `file://` root without a base path.
 - `_next/` — Next.js build artifacts (JS chunks, CSS chunks, optimized image cache under `_next/image/`). Hashed,
   framework-generated filenames referenced by `?dpl=...` query strings. Treat as opaque; do not hand-edit chunk
   contents.
-- `prep-centers/`, `blog/`, `services/`, `software/`, `compare/` — large sets of near-identical programmatic-SEO
-  pages (298 prep-center listings, 96 blog posts, plus service/software/comparison subpages), each just its own
-  `index.html`. These are independent static exports of the same page template with different content — a fix
-  made in one page's markup does not propagate to the others.
-- `about/`, `contact/`, `pricing/`, `privacy/`, `tos/`, `disclaimer/`, `affiliate-disclosure/` — single static
-  pages.
+- **Top-level section pages have been flattened out of their directories**: `blog.html`, `compare.html`,
+  `contact.html`, `pricing.html`, `services.html`, `software.html`, `wfs-calculator.html` now live at the repo
+  root instead of `blog/index.html`, `compare/index.html`, etc. (those old `dir/index.html` files were deleted).
+  Internal links and `include/header.php`'s nav were updated to point at the flat filenames — when adding a new
+  top-level section, follow this flat pattern, not a subdirectory.
+- Nested/per-item pages under those same directories were **not** flattened and still use `dir/slug/index.html`:
+  `blog/<post-slug>/index.html` (96 posts), `software/<tool>/index.html` (extension, inventory-management,
+  order-management, repricer, sourcing), `prep-centers/<slug>/index.html` (298 listings). These remain
+  independent static exports of the same page template — a fix made in one page's markup does not propagate to
+  the others.
+- `about/`, `privacy/`, `tos/`, `disclaimer/`, `affiliate-disclosure/` — still single static pages under their own
+  directory (`about/index.html`, etc.) — these were not part of the flattening pass.
 - `images/`, `fonts/` — static assets referenced directly (not through `_next/image`).
 - `style.css`, `script.js` — hand-maintained additions (not part of the mirror), linked from `index.html`'s
   `<head>`/end of `<body>`. This is the intended place for new custom CSS/JS going forward.
+- `include/header.php`, `include/footer.php`, `split_index.js`, `split_software.js` — leftovers from an abandoned
+  attempt to de-duplicate the header/footer via PHP includes (the scripts sliced `<main>` out of `index.html` /
+  `software/index.html` and wrote `index.php` / `software/index.php` wrappers). Those generated `.php` entry
+  points have since been deleted and the site reverted to plain flat static HTML — **there is no PHP include
+  mechanism actually wired into any current page.** `include/*.php` is orphaned; don't assume edits there affect
+  the live pages. Every flat `.html` page still embeds its own full header/footer copy independently, per the
+  hydration gotcha below.
+- **Known inconsistency to watch for**: the logo/home link in `index.html`, `compare.html`, `contact.html`, and
+  `wfs-calculator.html` currently points to `href="index.php"` (a leftover from the abandoned PHP experiment,
+  now a dead link since `index.php` was deleted). Other pages correctly link to `index.html`. Fix opportunistically
+  when touching a page's header, or in a dedicated pass — don't assume the target exists.
 
 ## Critical gotcha: every page embeds its content twice
 
